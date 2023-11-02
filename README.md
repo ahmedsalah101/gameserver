@@ -1,4 +1,9 @@
-# Running Server
+# Description
+
+a game server using the Actor model, a concurrency model that allows for efficient and scalable system design. The server utilizes websockets to synchronize the state of multiple players in real-time, providing a smooth gaming experience.
+By leveraging the Actor model, the game server is able to handle high loads and efficiently coordinate shared state between all players. This approach ensures high performance and responsiveness in the game environment.
+
+## Running Server
 
 ```
 make server
@@ -6,7 +11,7 @@ make server
 
 this will start the server on port 4000,and will wait for clients to syncronize states among them.
 
-# Running Clients
+## Running Clients
 
 start clients by running:
 
@@ -67,3 +72,7 @@ need to update the state of player {100 {811 724} 3552661241410906520}
 need to update the state of player {100 {512 906} 3552661241410906520}
 ...
 ```
+
+# Acknowledge
+
+this is based on series of streams by Anthony GG ([source](https://www.youtube.com/watch?v=WBLpjEDNWqE))
